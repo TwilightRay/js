@@ -1,12 +1,10 @@
-function easy(number) {
-    if (!number)
-        return 0;
-    var result = 1;
-    while (number) {
-        result *= number % 10;
-        number = Math.floor(number / 10);
-    }
-    return result;
-}
+"use strict";
+let phrase = `Обратные кавычки позволяют встраивать переменные ${str}`;
+let name = "Владимир";
 
-console.log(easy(33721));
+// Вставим переменную
+alert( `Привет, ${name}!` ); // Привет, Владимир!
+
+// Вставим выражение
+alert( `результат: ${1 + 2}` ); // результат: 3
+
